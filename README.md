@@ -28,37 +28,38 @@
 ### 1. Клонирование репозитория
 
 Сначала клонируйте репозиторий на ваш локальный компьютер:
-
-> git clone https://github.com/ваш-пользователь/task-manager.git
-cd task-manager;
-
+```
+ git clone https://github.com/ваш-пользователь/task-manager.git
+cd task-manager
+```
 
 ## 2.  Настройка серверной части
 
 1. Переместите склонированный проект в папку вашего локального сервера (например, C:\xampp\htdocs\ для XAMPP).
 2. Создайте базу данных MySQL:
 
- > CREATE DATABASE task_manager;
+```CREATE DATABASE task_manager ```
 
 
 3. Импортируйте структуру базы данных из файла database.sql, который находится в корне проекта:
    
-
-> mysql -u your_username -p task_manager < database.sql
+``` mysql -u your_username -p task_manager < database.sql```
 
 
 
 4. Настройте подключение к базе данных в файле config.php:
 
->define('DB_HOST', 'localhost');
+```
+define('DB_HOST', 'localhost');
 define('DB_NAME', 'task_manager');
 define('DB_USER', 'your_username');
 define('DB_PASSWORD', 'your_password');
+```
 
 ## 3. Установка зависимостей
 Используйте Composer для установки всех необходимых зависимостей:
 
-> composer install
+``` composer install```
 
 
 ## 4. Настройка клиентской части
@@ -66,7 +67,8 @@ define('DB_PASSWORD', 'your_password');
 
 ## 5. Запуск сервера
 Запустите Apache и MySQL через панель управления (например, XAMPP) и перейдите по адресу:
-> http://localhost/task-manager/
+
+http://localhost/task-manager/
 
 ### Использование:
 
