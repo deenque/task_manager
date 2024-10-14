@@ -68,7 +68,7 @@ define('DB_PASSWORD', 'your_password');
 ## 5. Запуск сервера
 Запустите Apache и MySQL через панель управления (например, XAMPP) и перейдите по адресу:
 
-http://localhost/task-manager/
+http://localhost/task_manager/
 
 ### Использование:
 
