@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400');
+
+body {
+    background-image: url('https://i.postimg.cc/CKP8X9yk/fon1.jpg'); /* Полный путь к изображению */
+    background-size: cover; /* Заставляет изображение занимать весь экран */
+    background-position: center; /* Центрирует изображение */
+    height: 100vh; /* Устанавливает высоту на 100% высоты видимого экрана */
+    margin: 0; /* Убирает отступы по умолчанию */
+    font-family: "Manrope", sans-serif;
+    background-color: #000; /* Чёрный фон страницы */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.89); /* Светло-серый стеклянный эффект */
+    border-radius: 10px;
+    
+    backdrop-filter: blur(50px); /* Размытие фона для стеклянного эффекта */
+}
+
+h1 {
+    text-align: center;
+    color: #181818; /* цвет для заголовков */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818; /* цвет для заголовков */
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    background-color: #5eb30a; /* Стиль кнопок для фильтров */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(10px); /* Добавление размытия для кнопок */
+}
+
+.filter-buttons button:hover {
+    background-color: #5eb30a; /* цвет при наведении */
+}
+
+#task-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#task-form input[type="text"] {
+    padding: 10px;
+    font-family: "Manrope", sans-serif;
+    flex: 1;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    outline: none; /* обводка при фокусе */
+    transition: border-color 0.3s; /* Плавный переход цвета обводки */
+}
+
+#task-form input[type="text"]:focus {
+    border-color: #aaa; /* Изменение цвета обводки при фокусе */
+}
+#task-form button {
+    font-family: "Manrope", sans-serif;
+    padding: 10px 20px;
+    background-color: #5eb30a, 190, 91, 0.8); /* Стиль кнопок для добавления задачи */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(5px); /* Добавление размытия для кнопок */
+}
+
+#task-form button:hover {
+    background-color: #5eb30a; /* Более яркий цвет при наведении */
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Стеклянный эффект для задач */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Легкая граница */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-title {
+    flex: 1;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff; /* Цвет текста задач */
+}
+
+.task-status {
+    text-align: center;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #181818; /* Цвет текста статуса */
+}
+
+.delete-button, .status-button, .edit-button {
+    font-family: "Manrope", sans-serif;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+    backdrop-filter: blur(5px); /* Стеклянный эффект для кнопок */
+}
+
+.delete-button {
+    font-family: "Manrope", sans-serif;
+    background-color: #f44336; /* Красный цвет с прозрачностью */
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #f44336; /* Ярче при наведении */
+}
+
+.status-button {
+    background-color: #2196f3; /* Синий цвет с прозрачностью */
+    color: #fff;
+}
+
+.status-button:hover {
+    background-color: #2196f3; /* Ярче при наведении */
+}
+
+.edit-button {
+    background-color: rgba(255, 255, 255, 0.5); /* Стеклянный эффект */
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.edit-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Ярче при наведении */
+}
+
+button {
+    font-family: "Manrope", sans-serif;
+    background-color: #5eb30a; /* Цвет кнопок */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(30px); /* Добавление размытия для кнопок */
+}
+
+/* Изменение цвета кнопок при наведении */
+button:hover {
+    background-color: rgba(140, 190, 91, 1); /* Более яркий цвет при наведении */
+}
+
+.logout-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logout-button {
+    font-family: "Manrope", sans-serif;    
+    padding: 10px 20px;
+    background-color: #f44336; /* Красный цвет для кнопки выхода с прозрачностью */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(50px); /* Добавление размытия для кнопок */
+}
+
+#logout-button:hover {
+    background-color: #f44336; 
+}
